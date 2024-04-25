@@ -1,0 +1,58 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+ul
+{
+  background-color: yellow;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+ul li
+{
+   font-size: 50px;
+   list-style-type: none;
+}
+ul li:last-child
+{
+  display: none;
+}
+@media (max-width: 750px)
+{
+  ul
+  {
+    background-color: steelblue;
+    color: white;
+    flex-direction: column;
+ }
+  ul li 
+  {
+    border: 1px solid;
+    width: 110%;
+    text-align: center;
+  }
+
+  ul li:last-child
+ {
+  display: none;
+ }
+
+ @media (max-width: 350px)
+ {
+  ul li:not(ul li:last-child)
+  {
+    display: none;
+  }
+  ul li:last-child
+  {
+    display: block;
+  }
+ }
+}
+
+
